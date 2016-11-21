@@ -4,3 +4,9 @@
 [submodule "plugins/ipynb"]
 	path = plugins/ipynb
 	url = git://github.com/danielfrg/pelican-ipynb.git
+[submodule "output/kentchun33333.github.io"]
+	path = output/kentchun33333.github.io
+	url = git@github.com:KentChun33333/kentchun33333.github.io.git
+[submodule "out"]
+	path = out
+	url = git@github.com:KentChun33333/kentchun33333.github.io.git
