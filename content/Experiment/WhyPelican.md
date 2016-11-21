@@ -1,6 +1,7 @@
 Title: Kick-off the blog 
 date: 2016-11-21 17:00
-author : Kent Chiu 
+Author : Kent Chiu 
+
 
 It has been a long time for considering to actually build a blog of myself.
 
