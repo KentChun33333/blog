@@ -7,7 +7,6 @@ SITENAME = u'Autumn Memo'
 SITEURL = 'https://kentchun33333.github.io'
 SITESUBTITLE = 'Data Scientist'
 PATH = 'content'
-ITELOGO = SITEURL + '/images/profile.png'
 TIMEZONE = 'Europe/Paris'
 
 DEFAULT_LANG = u'en'
