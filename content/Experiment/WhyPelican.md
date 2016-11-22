@@ -1,13 +1,23 @@
-Title: Kick-off the blog 
+Title: Autumn Memo 
 date: 2016-11-21 17:00
-Author : Kent Chiu 
+Author: Kent Chiu
+Tags: notes
 
 
-It has been a long time for considering to actually build a blog of myself.
 
-I've tried lots of free-blog such as Wix, Wordpress ... and also benchmarked lots of static-generate-site tools such as Hexo (node-js), Hugo (go), Jukely (Ruby) and Pelican (python).
+It has been a long time for considering to build a personal blog.
 
-After testing the flavors, I just found that current Pelican might be have the best support on ipython-notebook, which is the tool I really love. So, I adopted the Pelican-suit for my personal blog. 
+After tried lots of free-blog such as 
+- Wix
+- Wordpress 
+- ...etc 
 
-*Sincerely*
-*Kent* 
+Benchmarked lots of static-generate-site suit such as : 
+- Hexo (node-js)
+- Hugo (go)
+- Jekyll (Ruby)
+- Pelican (python).
+
+I just found that Pelican might be have the best support on ipython-notebook. So, I adopted the Pelican-suit for my personal blog. 
+
+
