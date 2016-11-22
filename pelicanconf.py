@@ -11,7 +11,6 @@ SITEDESCRIPTION = 'Collection of memos from authors'
 SITELOGO = SITEURL + '/image/profile.png'
 PATH = 'content'
 TIMEZONE = 'Europe/Paris'
-
 DEFAULT_LANG = u'en'
 
 
@@ -25,7 +24,13 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+# DISQUS_SITENAME
+# You must regist your site on disqus first
+# https://https-kentchun33333-github-io.disqus.com/admin/
+DISQUS_SITENAME = 'https-kentchun33333-github-io'
 
+# TOP Menu
+MAIN_MENU = True
 MENUITEMS = (('Archives', '/archives.html'),
                           ('Categories', '/categories.html'),
                           ('Tags', '/tags.html'),)
@@ -33,7 +38,8 @@ MENUITEMS = (('Archives', '/archives.html'),
 # Social widget
 SOCIAL = (('linkedin',
            'https://www.linkedin.com/in/kent-chiu-93b745a2?trk=hp-identity-photo'),
-          ('github', 'https://github.com/KentChun33333'),)
+          ('github', 'https://github.com/KentChun33333'),
+          ('facebook','https://www.facebook.com/kent.chun'),)
 
 # https://github.com/danielfrg/pelican-ipynb/issues/48
 IPYNB_IGNORE_CSS = True
