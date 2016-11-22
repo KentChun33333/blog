@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = u'Kent Chiu'
 SITENAME = u'Autumn Memo'
 SITEURL = ''
-
+SITESUBTITLE = 'Data Scientist'
 PATH = 'content'
 
 TIMEZONE = 'Europe/Paris'
@@ -23,14 +23,13 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-# Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Keras', 'http://keras.io'),)
-
 # Social widget
-SOCIAL = (('Linkedin',
+SOCIAL = (('linkedin',
            'https://www.linkedin.com/in/kent-chiu-93b745a2?trk=hp-identity-photo'),
-          ('Github', 'https://github.com/KentChun33333'),)
+          ('github', 'https://github.com/KentChun33333'),)
+
+
+
 
 DEFAULT_PAGINATION = 10
 
