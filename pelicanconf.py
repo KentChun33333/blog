@@ -6,8 +6,9 @@ AUTHOR = 'Kent Chiu'
 SITENAME = 'Autumn Memo'
 SITEURL = 'https://kentchun33333.github.io'
 SITETITLE = AUTHOR
+SITELOGO = SITEURL + '/images/profile.png'
 SITESUBTITLE = 'Data Scientist'
-SITEDESCRIPTION = "Collection of memos from {}".format(AUTHOR)
+SITEDESCRIPTION = 'Collection of memos from authors'
 PATH = 'content'
 TIMEZONE = 'Europe/Paris'
 
