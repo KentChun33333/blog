@@ -4,10 +4,10 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Kent Chiu'
 SITENAME = u'Autumn Memo'
-SITEURL = ''
+SITEURL = 'https://kentchun33333.github.io'
 SITESUBTITLE = 'Data Scientist'
 PATH = 'content'
-
+ITELOGO = SITEURL + '/images/profile.png'
 TIMEZONE = 'Europe/Paris'
 
 DEFAULT_LANG = u'en'
