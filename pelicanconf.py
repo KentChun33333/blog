@@ -23,6 +23,11 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+
+LINKS = (('Categories', 'https://kentchun33333.github.io/categories.html'),
+         ('Tags', 'https://kentchun33333.github.io/tags.html'),
+         ('Archives', 'https://kentchun33333.github.io/archives.html'))
+
 # Social widget
 SOCIAL = (('linkedin',
            'https://www.linkedin.com/in/kent-chiu-93b745a2?trk=hp-identity-photo'),
