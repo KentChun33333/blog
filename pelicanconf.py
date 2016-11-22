@@ -35,6 +35,7 @@ SOCIAL = (('linkedin',
            'https://www.linkedin.com/in/kent-chiu-93b745a2?trk=hp-identity-photo'),
           ('github', 'https://github.com/KentChun33333'),)
 
+# https://github.com/danielfrg/pelican-ipynb/issues/48
 IPYNB_IGNORE_CSS = True
 
 DEFAULT_PAGINATION = 10
