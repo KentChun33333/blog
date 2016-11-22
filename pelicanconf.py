@@ -6,16 +6,16 @@ AUTHOR = 'Kent Chiu'
 SITENAME = 'Autumn Memo'
 SITEURL = 'https://kentchun33333.github.io'
 SITETITLE = AUTHOR
-SITELOGO = SITEURL + '/images/profile.png'
 SITESUBTITLE = 'Data Scientist'
 SITEDESCRIPTION = 'Collection of memos from authors'
+SITELOGO = SITEURL + '/image/profile.png'
 PATH = 'content'
 TIMEZONE = 'Europe/Paris'
 
 DEFAULT_LANG = u'en'
 
 
-# pelican-themes
+# pelican-THEMES
 THEME = "/Users/kentchiu/pelican-themes/Flex"
 
 # Feed generation is usually not desired when developing
