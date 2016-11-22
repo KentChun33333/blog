@@ -2,10 +2,12 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = u'Kent Chiu'
-SITENAME = u'Autumn Memo'
+AUTHOR = 'Kent Chiu'
+SITENAME = 'Autumn Memo'
 SITEURL = 'https://kentchun33333.github.io'
+SITETITLE = AUTHOR
 SITESUBTITLE = 'Data Scientist'
+SITEDESCRIPTION = "Collection of memos from {}".format(AUTHOR)
 PATH = 'content'
 TIMEZONE = 'Europe/Paris'
 
@@ -23,9 +25,9 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 
-LINKS = (('Categories', 'https://kentchun33333.github.io/categories.html'),
-         ('Tags', 'https://kentchun33333.github.io/tags.html'),
-         ('Archives', 'https://kentchun33333.github.io/archives.html'))
+MENUITEMS = (('Archives', '/archives.html'),
+                          ('Categories', '/categories.html'),
+                          ('Tags', '/tags.html'),)
 
 # Social widget
 SOCIAL = (('linkedin',
