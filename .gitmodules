@@ -13,3 +13,6 @@
 [submodule "output"]
 	path = output
 	url = git@github.com:KentChun33333/kentchun33333.github.io.git
+[submodule "ouput"]
+	path = ouput
+	url = git@github.com:KentChun33333/kentchun33333.github.io.git
