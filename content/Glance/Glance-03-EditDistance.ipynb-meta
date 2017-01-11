@@ -1,0 +1,6 @@
+Title: A Glance at Edit Distance
+Slug: EditDistance
+Date: 2017-01-11 15:00
+Tags: connectionist temporal classification, LSTM, dynamic program, similarity, sequential data
+Author: Kent Chiu
+Summary: Edit Distance is an important algorithm to evaluate how similar of 2 sequences, it is one of the core algorithm in CTC-loss, which is also the core algorithm in deep speech2. 
