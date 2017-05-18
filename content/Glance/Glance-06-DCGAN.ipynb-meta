@@ -1,0 +1,6 @@
+Title: A Glance at Deep Convolution Generative Adversary Network
+Slug: DCGAN
+Date: 2017-04-11 20:00
+Tags: GAN, DCGAN, Game Theory
+Author: Kent Chiu
+Summary: Deep Convolution Generative Adversary Network use a min-max loss to train a Generator/Actor and a Discriminator/Critic. 

@@ -61,6 +61,7 @@ if __name__ == '__main__':
     # cp the assets
     for input_asset, output_asset in get_asset(dirname, NoteID):
         os.system('cp {} {}'.format(input_asset, output_asset))
+        print ('cp the assces {} to {}'.format(input_asset, output_asset))
 
     # git auto, use git to rollback
     os.system('../git_auto')
