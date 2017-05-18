@@ -36,7 +36,7 @@ def get_asset( dirname ,NoteID):
     assert os.path.isdir('output/image') == True
     file_list = os.listdir(dirname+'/image')
     for item in file_list :
-        if item.split('.')[-1] not in ('jpg','png','jepg','bmp','avi'):
+        if str.lower(item.split('.')[-1]) not in ('jpg','png','jepg','bmp','avi'):
             continue
         if re.match(r'{}-*[0-9]'.format(NoteID) ,item.split('.')[0]):
             input_asset  = os.path.join(dirname+'/image',item)
@@ -53,20 +53,23 @@ if __name__ == '__main__':
     assert len(filename.split('.'))==2
 
     NoteID , filetype   = filename.split('.') # NoteID = yyy
+
     output_file  = 'content/{}/{}'.format(class_name,filename)
 
     # cp the articles to content
     os.system('cp {} {}'.format(arg.file, output_file))
 
     # cp the assets
+    print (dirname, NoteID)
     for input_asset, output_asset in get_asset(dirname, NoteID):
         os.system('cp {} {}'.format(input_asset, output_asset))
-        print ('cp the assces {} to {}'.format(input_asset, output_asset))
+        print ('[*] cp the assces {} to {}'.format(input_asset, output_asset))
 
     # git auto, use git to rollback
     os.system('../git_auto')
+    print ('---------------- [blog] git push already -------------------')
     print ('[*] please adding ipynb-meta file')
-    print ('[*] then pelican -> output git push')
+    print ('[*] then pelican  content -> output git add . && commit && push')
 
 
 
