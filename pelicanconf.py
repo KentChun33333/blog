@@ -15,7 +15,7 @@ DEFAULT_LANG = u'en'
 
 
 # pelican-THEMES
-THEME = "/Users/kentchiu/pelican-themes/Flex"
+THEME = "/Users/kentchiu/Flex"
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -51,5 +51,5 @@ DEFAULT_PAGINATION = 10
 
 MARKUP = ('md', 'ipynb')
 
-PLUGIN_PATH = ['./plugins']
-PLUGINS = ['ipynb.markup']
+PLUGIN_PATH = ['./plugins/']
+PLUGINS = ['pelican-ipynb.markup']
