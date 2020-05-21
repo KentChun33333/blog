@@ -1,0 +1,6 @@
+Title: Re-implement YOLO in Tensorflow
+Slug: Re-implement YOLO in Tensorflow
+Date: 2019-01-01 20:00
+Tags: tensorflow, implementation, object detection
+Author: Kent Chiu
+Summary: Reimplement YOLO in Tensorflow with abstracting the deseign as the loss-layer.

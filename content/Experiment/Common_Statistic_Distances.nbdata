@@ -1,0 +1,6 @@
+Title: A Glance at Common Statistic Distance
+Slug: Common Statistic Distance
+Date: 2018-12-11 20:00
+Tags: distance, similarity, loss function
+Author: Kent Chiu
+Summary: There are lots of distance that used to measure either point-to-point, sequence-to-seence, tensor-to-tensor ...etc. Following lists some most common-used:  
