@@ -1,12 +1,12 @@
 import os, sys
 
-os.system('make html')
-os.system('cp -rf output/* ..//KentWebIO')
+cmd = os.system
 
-os.system('cd ..//KentWebIO')
-
-os.system('git add .')
-os.system('git commit -m"update post"')
-os.system('git push')
+cmd('make html')
+cmd('cp -rf output/* ../KentWebIO')
+cmd('cd ../KentWebIO')
+cmd('git add .')
+cmd('git commit -m"update post"')
+cmd('git push')
 
 
