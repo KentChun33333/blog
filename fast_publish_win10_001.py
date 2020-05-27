@@ -1,13 +1,13 @@
-import os, sys
+import os
 
 cmd = os.system
+github_io_dir = '../KentWebIO'
 
 cmd('make html')
-cmd('cp -r output/* ../KentWebIO')
-#cmd('cd ../KentWebIO')
-cmd('git -C ../KentWebIO add .')
-cmd('git -C ../KentWebIO commit -m"update post"')
-cmd('git -C ../KentWebIO push')
+cmd(f'cp -r output/* {github_io_dir}')
+cmd(f'git -C {github_io_dir} add .')
+cmd(f'git -C {github_io_dir} commit -m"update post"')
+cmd(f'git -C {github_io_dir} push')
 
 cmd('git add .')
 cmd('git commit -m"update post"')
