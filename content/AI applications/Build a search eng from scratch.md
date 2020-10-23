@@ -5,31 +5,27 @@ Tags: Search, Recommendations
 
 
 
-# 0. About Search System
-
-
-
 Recently I write a simple search system that mostly in python. ([Github Link](https://github.com/KentChun33333/search_eng)) This post is the introduction of it. 
 
 
 
-# 1. Project Overall
+
+
+### 1. Project Overall
 
 Typically, search/recommend system would including several key components (1) Web Crawler (2) Indexing (3) Recall model/mechanism (4) Rank model (5) Query Web-Interface. 
 
-<img src="image\system_flow.png" alt="image-20200924000928319" style="zoom:75%;" />
+<img src="system_flow.png" alt="image-20200924000928319" style="zoom:75%;" />
 
-
-
-## 1.1 Web Crawler 
+#### 1.1 Web Crawler 
 
 - Using *selenium* and *beautifulsoup4* to fetch the data from https://stackoverflow.com that mostly related to database. In addition, currently only crawling the title as document for storage concerns. This reop use *sqlite3* as forward-database for simplicity. 
 
-  <img src="image\forward_db.png">
+  <img src="forward_db.png">
 
   
 
-## 1.2 Indexing
+#### 1.2 Indexing
 
 - Using *nltk* and *gensim* to do the text normalization, stemming, lemmatization and doc2vec. 
 
@@ -60,7 +56,7 @@ Typically, search/recommend system would including several key components (1) We
 
 - Using Flask and Jinja template with bootstrap UI framework. 
 
-  <img src="image\demo.gif"> 
+  <img src="demo.gif"> 
 
 
 
@@ -86,9 +82,9 @@ Typically, search/recommend system would including several key components (1) We
 
 Current result just using traditional bool query, and not counting lots features like voting, user persona, content of question, and content of reply answers. 
 
-| This Repo                     | Original Website            |
-| ----------------------------- | --------------------------- |
-| <img src="image\image_2.png"> | <img src="image\image.png"> |
+| This Repo               | Original Website      |
+| ----------------------- | --------------------- |
+| <img src="image_2.png"> | <img src="image.png"> |
 
 
 # 4. Further Improvement 
