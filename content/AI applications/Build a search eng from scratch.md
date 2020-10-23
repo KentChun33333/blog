@@ -15,7 +15,7 @@ Recently I write a simple search system that mostly in python. ([Github Link](ht
 
 Typically, search/recommend system would including several key components (1) Web Crawler (2) Indexing (3) Recall model/mechanism (4) Rank model (5) Query Web-Interface. 
 
-<img src="system_flow.png" alt="image-20200924000928319" style="zoom:75%;" />
+<img src="image\system_flow.png" alt="image-20200924000928319" style="zoom:75%;" />
 
 #### 1.1 Web Crawler 
 
@@ -38,13 +38,13 @@ Typically, search/recommend system would including several key components (1) We
 
 - There are many advanced efficient index way, and for vector-database the indexing method often consisted of clustering and quantization methods.
 
-## 1.3 Recall Model / Mechanism
+#### 1.3 Recall Model / Mechanism
 
 - Here using traditional bool-query.  It could be further enhance with term-frequency or even a model to recall the candidates.
 
   
 
-## 1.4 Ranking Model / Mechanism
+#### 1.4 Ranking Model / Mechanism
 
 - Here using Doc2Vec from *gensim*. The pretrained weight is from https://github.com/jhlau/doc2vec. 
 
@@ -52,15 +52,13 @@ Typically, search/recommend system would including several key components (1) We
 
   
 
-## 1.5 Query Interface
+#### 1.5 Query Interface
 
 - Using Flask and Jinja template with bootstrap UI framework. 
 
-  <img src="demo.gif"> 
+  <img src="image\demo.gif"> 
 
-
-
-# 2. Usage Flow
+### 2. Usage Flow
 
 - install the requirement packages 
 - install chrome driver for selenium in data/web_driver
@@ -76,18 +74,16 @@ Typically, search/recommend system would including several key components (1) We
   - inverted_database = *r*'data/sqldb/inverted_key_word_db.pkl'
   - Doc2Vector300D_model_weight = *r*"data/model/doc2vec.bin"
 
-
-
-# 3. Result Comparison
+### 3. Result Comparison
 
 Current result just using traditional bool query, and not counting lots features like voting, user persona, content of question, and content of reply answers. 
 
-| This Repo               | Original Website      |
-| ----------------------- | --------------------- |
-| <img src="image_2.png"> | <img src="image.png"> |
+| This Repo                     | Original Website            |
+| ----------------------------- | --------------------------- |
+| <img src="image\image_2.png"> | <img src="image\image.png"> |
 
+### 4. Further Improvement 
 
-# 4. Further Improvement 
 - There are lots of things we could improve on and play with:
   - **Model-based recall mechanism**:  Personally, I also build the vectors database of title-text, however not index it yet for fast-read. There are some ways to index the dense-vector database via some clustering or quantization methods. I would like to try some of them after more understanding of them.  Also, I am not sure how much improvement would it bring to the overall performance.
   - **Stronger Ranking model**: There are many rooms to improve the ranking model, like taking extra-features into the model or using a better model.  
