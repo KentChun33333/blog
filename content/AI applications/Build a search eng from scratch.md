@@ -1,4 +1,4 @@
-Title: Autumn Memo 
+Title: Build a Search System
 date: 2020-09-01 17:00
 Author: Kent Chiu
 Tags: Search, Recommendations
@@ -17,7 +17,7 @@ Recently I write a simple search system that mostly in python. ([Github Link](ht
 
 Typically, search/recommend system would including several key components (1) Web Crawler (2) Indexing (3) Recall model/mechanism (4) Rank model (5) Query Web-Interface. 
 
-<img src="doc\system_flow.png" alt="image-20200924000928319" style="zoom:75%;" />
+<img src="image\system_flow.png" alt="image-20200924000928319" style="zoom:75%;" />
 
 
 
@@ -25,7 +25,7 @@ Typically, search/recommend system would including several key components (1) We
 
 - Using *selenium* and *beautifulsoup4* to fetch the data from https://stackoverflow.com that mostly related to database. In addition, currently only crawling the title as document for storage concerns. This reop use *sqlite3* as forward-database for simplicity. 
 
-  <img src="doc\forward_db.png">
+  <img src="image\forward_db.png">
 
   
 
@@ -60,7 +60,7 @@ Typically, search/recommend system would including several key components (1) We
 
 - Using Flask and Jinja template with bootstrap UI framework. 
 
-  <img src="doc\demo.gif"> 
+  <img src="image\demo.gif"> 
 
 
 
@@ -86,9 +86,9 @@ Typically, search/recommend system would including several key components (1) We
 
 Current result just using traditional bool query, and not counting lots features like voting, user persona, content of question, and content of reply answers. 
 
-| This Repo                   | Original Website          |
-| --------------------------- | ------------------------- |
-| <img src="doc\image_2.png"> | <img src="doc\image.png"> |
+| This Repo                     | Original Website            |
+| ----------------------------- | --------------------------- |
+| <img src="image\image_2.png"> | <img src="image\image.png"> |
 
 
 # 4. Further Improvement 
